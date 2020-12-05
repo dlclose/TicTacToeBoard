@@ -15,8 +15,7 @@ class TicTacToeBoardTest : public ::testing::Test
 };
 
 // EXAMPLE TEST FORMAT
-TEST(TicTacToeBoardTest, unitTestName)
+/*TEST(TicTacToeBoardTest, unitTestName)
 {
-	bool actual = (toggleTurn() == 'X') ? true : false;
 	ASSERT_TRUE(actual);
-}
+}*/
