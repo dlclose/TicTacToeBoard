@@ -63,6 +63,16 @@ TEST(TicTacToeBoardTest, placePieceTest4)
 	TicTacToeBoard obj;
 	ASSERT_EQ(Invalid, obj.placePiece(4, 0));
 }
+TEST(TicTacToeBoardTest, placePieceTest5)
+{
+	TicTacToeBoard obj;
+	obj.placePiece(0,0);
+	obj.placePiece(1,1);
+	obj.placePiece(0,1);
+	obj.placePiece(1,2);
+	obj.placePiece(0,2);
+	ASSERT_EQ(Blank, obj.placePiece(0, 0));
+}
 TEST(TicTacToeBoardTest, getPieceTest1)
 {
 	TicTacToeBoard obj;
@@ -160,3 +170,5 @@ TEST(TicTacToeBoardTest, getWinnerTest6)
 	obj.placePiece(1,0);
 	ASSERT_EQ(Blank, obj.getWinner());
 }
+
+
